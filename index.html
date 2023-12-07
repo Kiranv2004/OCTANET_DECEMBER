@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressive Landing Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3b50;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .col {
+            width: 100%;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        @media (min-width: 600px) {
+            .col {
+                width: 48%;
+                margin: 1%;
+            }
+        }
+
+        .feature-box {
+            background-color: #34aedb;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #0c1211;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p>Welcome to My Web page</p>
+        <h1> Landing Page</h1>
+        <p>Hello I am Kiran</p>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2>COLUMNS</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="feature-box">
+                        <h3>Column 1</h3>
+                        <p>Name</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="feature-box">
+                        <h3>Column 2</h3>
+                        <p>Address</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Reach us by kiran434@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Landing Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
